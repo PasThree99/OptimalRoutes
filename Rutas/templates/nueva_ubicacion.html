@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}
+Agregar ubicacion
+{% endblock %}
+
+{% block content %}
+<h1 class="colorWhite">Ingresa la nueva ubiacion</h1>
+
+
+
+<form method="POST">
+    {{ form.csrf_token }}
+    <label class="colorWhite">Nombre</label>
+    {{ form.l1() }}<br>
+    <label class="colorWhite">Latitud</label>
+    {{ form.l2() }}<br>
+    <label class="colorWhite">Longitud</label>
+    {{ form.l3() }}<br>
+    {{ form.s() }}
+
+</form>
+
+
+{% endblock %}
+

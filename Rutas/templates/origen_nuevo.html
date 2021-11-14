@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}
+Nuevo origen
+{% endblock %}
+
+{% block content %}
+
+<form method="POST">
+    {{ form.csrf_token }}
+    <label class="colorWhite">Nuevo origen</label>
+    {{ form.l1() }}<br>
+    {{ form.s() }}
+
+</form>
+
+{% endblock %}

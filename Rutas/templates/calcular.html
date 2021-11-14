@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}
+Calcular
+{% endblock %}
+
+{% block content %}
+<br>
+<h1 class="colorWhite">Ingresa las ubicaciones a visitar</h1>
+<br>
+<form method="POST">
+    {{ form.csrf_token }}
+    {{ form.l1() }}
+    <br>
+    {{ form.l2() }}
+    <br>
+    {{ form.l3() }}
+    <br>
+    {{ form.l4() }}
+    <br>
+    {{ form.l5() }}
+    <br>
+    {{ form.l6() }}
+    <br>
+    {{ form.l7() }}
+    <br>
+    {{ form.l8() }}
+    <br>
+    {{ form.l9() }}
+    <br>
+    {{ form.l10() }}
+    <br>
+    {{ form.s() }}
+</form>
+{% endblock %}

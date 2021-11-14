@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}
+    Result
+{% endblock %}
+{% block content %} 
+{% for item in items %}
+    <a class="colorWhite">{{ item }}</a> <br>
+{% endfor %}
+    <div>
+        <a class="colorWhite">Regresar</a>
+    </div>
+{% endblock %}

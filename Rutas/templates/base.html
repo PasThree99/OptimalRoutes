@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel=stylesheet href="{{ url_for('static',filename='styles.css') }}">
+        <title>
+            {%block title%}
+            {% endblock %}
+        </title>
+    </head>
+
+    <body class="body">
+        <nav id="nav1" class="nav1">
+            <ul class="lista">
+                <li class="list-element first-element"><a class="navbartext" href="{{ url_for( 'home_page' ) }}">Home</a></li>
+                <li class="list-element" ><a class="navbartext" href="{{ url_for( 'calcular_page' ) }}">Calcular</a> </li>
+                <li class="list-element"><a class="navbartext" href="{{ url_for('cambiar_clave') }}">Cambiar clave api</a></li>
+                <li class="list-element"><a class="navbartext" href="{{ url_for('nueva_ubicacion')}}">Agregar ubicaci&oacute;n</a></li>
+                <li class="list-element"><a class="navbartext" href="#">Consultar Base</a></li>
+                <li class="list-element"><a class="navbartext" href="{{ url_for('cambiar_origen') }}">Cambiar origen</a></li>
+            </ul>
+        </nav>
+        <div>
+            {%block content %}
+            {% endblock %}
+        </div>
+
+    </body>
+
+    <footer>
+        <h1>Developed By: Sebastián González Pastrana</h1>
+    </footer>
+
+
+
+</html>
