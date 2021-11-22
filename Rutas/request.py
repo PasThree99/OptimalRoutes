@@ -24,4 +24,4 @@ def makeRequest(origin, destination):
     theUrl = 'https://router.hereapi.com/v8/routes?origin=' + lat_ori + ',' + lon_ori + '&destination=' + lat_des + ',' + lon_des + '&return=summary,typicalDuration&transportMode=car&apikey=' + apiKey
 
     r = requests.get(theUrl)
-    return float(extractTime(r.text))
+    return float(extractTime(r.text))/60
