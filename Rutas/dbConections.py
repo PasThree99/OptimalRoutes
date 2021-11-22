@@ -10,6 +10,7 @@ def getAllPlaces():
     for i in r:
         l.append(i[0])
     conn.close()
+    l.sort() #opcional
     return l
 
 def getAPIKey():
