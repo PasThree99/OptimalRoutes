@@ -11,7 +11,7 @@ def getAllPlaces():
         l.append(i[0])
     conn.close()
     print(l[-1])
-    #l.sort() #opcional
+    l.sort() #opcional
     return l
 
 def getAPIKey():
