@@ -33,3 +33,9 @@ class newOrigin(FlaskForm):
     op.extend(listOfTuples(getAllPlaces()))
     l1 = SelectField(label = "Lugar 1", choices=op)
     s = SubmitField(label='Submit')
+
+    def update(self):
+        nl = [('-','-')]
+        nl.extend(listOfTuples(getAllPlaces()))
+        self.op = nl
+        self.l1.choices = nl

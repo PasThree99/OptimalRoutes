@@ -61,5 +61,6 @@ def calcularRuta(lugares):
     st += origin
 
     print(req)
+    tiempoMinimo *= 1.15
 
     return (tiempoMinimo,st)

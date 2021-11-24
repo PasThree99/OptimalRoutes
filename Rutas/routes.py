@@ -56,10 +56,10 @@ def result_page():
 
 @app.route('/cambiar_clave_API')
 def cambiar_clave():
-    return render_template('cambiarClave.html')
+    return render_template('cambiarClave.html') 
 
 
-@app.route("/nueva_ubicacion", methods= ["GET","POST"])
+@app.route("/nueva_ubicacion", methods= ["GET","POST"]) 
 def nueva_ubicacion():
     aForm = newLocationForm()
     aForm.l1.default = aForm.l1.label
@@ -83,6 +83,7 @@ def insert_exito():
 @app.route("/cambiar_origen",methods= ["GET","POST"])
 def cambiar_origen():
     f = newOrigin()
+    f.update()
     f.l1.default = f.l1.label
 
     if(f.validate_on_submit()):
